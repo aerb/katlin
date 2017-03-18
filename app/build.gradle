@@ -20,9 +20,18 @@ android {
     }
 }
 
+
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'org.jetbrains.anko:anko-sdk15:0.9.1'
+
+    compile "com.android.support:appcompat-v7:25.1.0"
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+
+    compile "org.jetbrains.anko:anko-sdk15:$anko_version"
+    compile "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
+    compile "org.jetbrains.anko:anko-recyclerview-v7:$anko_version"
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testCompile 'junit:junit:4.12'
 }
